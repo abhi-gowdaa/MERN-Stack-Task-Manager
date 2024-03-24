@@ -6,8 +6,8 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(bodyParser.json());
 app.use(cors(
-  {
-      origin: ["https://task-manager-front-end-five.vercel.app"],
+  { //https://task-manager-front-end-five.vercel.app
+      origin: ["*"],
       methods: ["POST", "GET" ,"DELETE","PUT"],
       credentials: true
   }
