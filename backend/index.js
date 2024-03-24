@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors(
   { //https://task-manager-front-end-five.vercel.app
-      origin: ["*"],
+      origin: ["http://localhost:3000/"],
       methods: ["POST", "GET" ,"DELETE","PUT"],
       credentials: true
   }
